@@ -1,1 +1,2 @@
-# leetcode-exercise
+
+data structure and algorithm
