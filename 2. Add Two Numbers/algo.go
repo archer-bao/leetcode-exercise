@@ -6,6 +6,7 @@ type ListNode struct {
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	// 存在一个空list时无意义
 	if l1 == nil || l2 == nil {
 		return nil
 	}
@@ -15,7 +16,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		currentNode = sumList
 		nextL1      = l1
 		nextL2      = l2
-		carry       = 0
+		carry       = 0 //进位值
 	)
 
 	for nextL1 != nil || nextL2 != nil {
