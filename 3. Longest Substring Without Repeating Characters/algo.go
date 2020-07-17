@@ -4,6 +4,9 @@ func lengthOfLongestSubstring(s string) int {
 	if len(s) < 1 {
 		return 0
 	}
+	if len(s) == 1 {
+		return 1
+	}
 
 	var (
 		charMap               = make(map[int32]int)
